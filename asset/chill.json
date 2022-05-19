@@ -1,0 +1,26 @@
+[
+    {
+        "ID" : "1",
+        "Title" : "Apa itu Esport ?",
+        "Author" : "Fathurrohman",
+        "Thumbnail" : "https://raw.githubusercontent.com/madhanii/tekweb20222/main/images/art1.jpg",
+        "Content" : "Sejarah singkat Esport...",
+        "markdown": "artikel 1.md"
+    },
+    {
+        "ID" : "2",
+        "Title" : "Sejarah Esport di dunia",
+        "Author" : "Humas BNN",
+        "Thumbnail" : "https://raw.githubusercontent.com/madhanii/tekweb20222/main/images/art2.jpg",
+        "Content" : "Awal mula esport di dunia...",
+        "markdown": "artikel 2.md"
+    },
+    {
+        "ID" : "3",
+        "Title" : "Sejarah Esport di Indonesia",
+        "Author" : "Humas BNN",
+        "Thumbnail" : "https://raw.githubusercontent.com/madhanii/tekweb20222/main/images/art3.jpg",
+        "Content" : "Awal mula Esport di Indonesia...",
+        "markdown": "artikel 3.md"
+    }
+]
