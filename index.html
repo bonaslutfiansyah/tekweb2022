@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Bonas Lutfiansyah</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#p">ARTICLE</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">ABOUT</a> </li>
+            </ul>
+        </nav>
+        <div class="paralax">
+            <div class="content">
+                <h1>WELCOME TO MY WEBSITE</h1>
+                <a href="index.html"><img src="/images/bonas-.png"></a>
+            </div>
+        </div>
+        <audio hidden autoplay loop>
+            <source src="audio/song.mp3" type="audio/mpeg">
+          </audio>
+    </div>
+    <div class="bg" id="p">
+        <div class="judul" id="b">
+            <h1>THIS IS ARTICLE</h1>
+        </div>
+        <div class="artikel" id="app">
+            <div class="sub" v-for="artikell in articles">
+                <img :src="artikell.Thumbnail">
+                <h1>{{artikell.Title}}</h1>
+                <p>{{artikell.Content}}</p>
+                <br>
+                <br>
+                <button> <a :href="'./md.html?markdown=' + artikell.markdown"> See More...</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="portofolio">
+
+    </div>
+    
+<script src="asset/main.js"></script>
+<script>
+    ScrollReveal({
+        reset: true,
+        distance: '100px',
+        duration: 1500,
+        delay: 0
+    });
+
+    ScrollReveal().reveal('.content', { delay: 200, origin: 'top' });
+    ScrollReveal().reveal('#nav', { delay: 200, origin: 'left' });
+    ScrollReveal().reveal('.artikel', { delay: 200, origin: 'bottom' });
+    ScrollReveal().reveal('.judul', { delay: 200, origin: 'top' });
+    
+    
+</script>
+</body>
+</html>
