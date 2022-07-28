@@ -13,9 +13,9 @@ response:
     "id"              : "",
     "title"           : "",
     "author"          : "",
-    "pic      "       : "",
-    "pic2"         : "",
-    "markdown"        : "",
+    "thumbnail"       : "",
+    "content"         : "",
+    "markdown"        : ""
   },
   {
     ...
@@ -30,8 +30,8 @@ response:
   "id"              : "",
   "title"           : "",
   "author"          : "",
-  "pic      "       : "",
-  "pic2"            : "",
+  "thumbnail"       : "",
+  "content"         : "",
   "markdown"        : "",
 }
 ```
@@ -43,8 +43,8 @@ data:
   "id"              : "",
   "title"           : "",
   "author"          : "",
-  "pic      "       : "",
-  "pic2"            : "",
+  "thumbnail"       : "",
+  "content"         : "",
   "markdown"        : "",
 }
 response:
@@ -59,8 +59,8 @@ data:
   "id"              : "",
   "title"           : "",
   "author"          : "",
-  "pic      "       : "",
-  "pic2"            : "",
+  "thumbnail"       : "",
+  "content"         : "",
   "markdown"        : "",
 }
 response:
@@ -82,8 +82,9 @@ response:
 [
   {
     "id"        : "",
-    "sapaan"    : "",
-    "deskripsi" : ""
+    "des"       : "",
+    "sapa"      : "",
+    "foto"      : ""
   },
   {
     ...
@@ -95,9 +96,10 @@ response:
 GET: /about/[id]
 response:
 {
-  "id"        : "",
-  "sapaan"    : "",
-  "deskripsi" : "",
+  "id"              : "",
+  "des"             : "",
+  "sapa"            : "",
+  "foto"            : ""
 }
 ```
 ### Menambahkan about
@@ -105,9 +107,10 @@ response:
 POST: /about
 data:
 {
-  "id"        : "",
-  "sapaan"    : "",
-  "deskripsi" : "",
+  "id"              : "",
+  "des"             : "",
+  "sapa"            : "",
+  "foto"            : ""
 }
 response:
 true    //if true
@@ -118,9 +121,10 @@ false   //if false
 PUT: /about
 data:
 {
-  "id"        : "",
-  "sapaan"    : "",
-  "deskripsi" : "",
+  "id"              : "",
+  "des"             : "",
+  "sapa"            : "",
+  "foto"            : ""
 }
 response:
 true    //if true
